@@ -1,0 +1,674 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{7AEA0319-6574-4AD8-A9D9-CBB2677ACFB6}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>BaseFramework.Model</RootNamespace>
+    <AssemblyName>BaseFramework.Model</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CompanyModel\CompanyBranchDTO.cs" />
+    <Compile Include="CompanyModel\CompanyDepartmentDTO.cs" />
+    <Compile Include="CompanyModel\CompanyDTO.cs" />
+    <Compile Include="CompanyModel\CompanyTitleDTO.cs" />
+    <Compile Include="EmployeeModelDTO\AccessTypeDTO.cs" />
+    <Compile Include="EmployeeModelDTO\AdvanceDTO.cs" />
+    <Compile Include="EmployeeModelDTO\BankAccountTypeDTO.cs" />
+    <Compile Include="EmployeeModelDTO\BankInformationDTO.cs" />
+    <Compile Include="EmployeeModelDTO\BloodGroupDTO.cs" />
+    <Compile Include="EmployeeModelDTO\ContractTypeDTO.cs" />
+    <Compile Include="EmployeeModelDTO\DebitCategoryDTO.cs" />
+    <Compile Include="EmployeeModelDTO\DebitDTO.cs" />
+    <Compile Include="EmployeeModelDTO\DemandDTO.cs" />
+    <Compile Include="EmployeeModelDTO\DisabilitySituationDTO.cs" />
+    <Compile Include="EmployeeModelDTO\EducationDTO.cs" />
+    <Compile Include="EmployeeModelDTO\EducationLevelDTO.cs" />
+    <Compile Include="EmployeeModelDTO\EducationStatusDTO.cs" />
+    <Compile Include="EmployeeModelDTO\EducationsTypeDTO.cs" />
+    <Compile Include="EmployeeModelDTO\EmployeeDetailDTO.cs" />
+    <Compile Include="EmployeeModelDTO\EmployeeDTO.cs" />
+    <Compile Include="EmployeeModelDTO\EmployeeOtherInfoDTO.cs" />
+    <Compile Include="EmployeeModelDTO\EmployeeSalaryDTO.cs" />
+    <Compile Include="EmployeeModelDTO\EmploymentTypeDTO.cs" />
+    <Compile Include="EmployeeModelDTO\ExpenseDTO.cs" />
+    <Compile Include="EmployeeModelDTO\GenderDTO.cs" />
+    <Compile Include="EmployeeModelDTO\MaritalStatusDTO.cs" />
+    <Compile Include="EmployeeModelDTO\OvertimeDTO.cs" />
+    <Compile Include="EmployeeModelDTO\PermitDTO.cs" />
+    <Compile Include="EmployeeModelDTO\PermitTypeDTO.cs" />
+    <Compile Include="EmployeeModelDTO\RequestForVisaDTO.cs" />
+    <Compile Include="EmployeeModelDTO\SystemEducationDTO.cs" />
+    <Compile Include="EmployeeModelDTO\VisaTypeDTO.cs" />
+    <Compile Include="Login\LoginDTO.cs" />
+    <Compile Include="ProjectBaseDTO\CityDTO.cs" />
+    <Compile Include="ProjectBaseDTO\CountryDTO.cs" />
+    <Compile Include="ProjectBaseDTO\DistrictDTO.cs" />
+    <Compile Include="ProjectBaseDTO\LogDTO.cs" />
+    <Compile Include="ProjectBaseDTO\PageDTO.cs" />
+    <Compile Include="ProjectBaseDTO\PageEventDTO.cs" />
+    <Compile Include="ProjectBaseDTO\RoleDTO.cs" />
+    <Compile Include="ProjectBaseDTO\RoleEventDTO.cs" />
+    <Compile Include="ProjectBaseDTO\UserCompanyDTO.cs" />
+    <Compile Include="ProjectBaseDTO\UserDTO.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Resource\CompanyModelValidationMessage\CompanyBranchDTO\CompanyBranchDTOModelValidationMessage.Designer.cs">
+      <DependentUpon>CompanyBranchDTOModelValidationMessage.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Resource\CompanyModelValidationMessage\CompanyBranchDTO\CompanyBranchDTOModelValidationMessage.en.Designer.cs">
+      <DependentUpon>CompanyBranchDTOModelValidationMessage.en.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Resource\CompanyModelValidationMessage\CompanyDepartmentDTO\CompanyDepartmentDTOModelValidationMessage.en.Designer.cs">
+      <DependentUpon>CompanyDepartmentDTOModelValidationMessage.en.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Resource\CompanyModelValidationMessage\CompanyDepartmentDTO\CompanyDepartmentDTOModelValidationMessage.Designer.cs">
+      <DependentUpon>CompanyDepartmentDTOModelValidationMessage.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Resource\CompanyModelValidationMessage\CompanyDTO\CompanyDTOModelValidationMessage.Designer.cs">
+      <DependentUpon>CompanyDTOModelValidationMessage.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Resource\CompanyModelValidationMessage\CompanyDTO\CompanyDTOModelValidationMessage.en.Designer.cs">
+      <DependentUpon>CompanyDTOModelValidationMessage.en.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Resource\CompanyModelValidationMessage\CompanyTitleDTO\CompanyTitleDTOModelValidationMessage.Designer.cs">
+      <DependentUpon>CompanyTitleDTOModelValidationMessage.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Resource\CompanyModelValidationMessage\CompanyTitleDTO\CompanyTitleDTOModelValidationMessage.en.Designer.cs">
+      <DependentUpon>CompanyTitleDTOModelValidationMessage.en.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Resource\EmployeeModelValidationMessage\AccessTypeDTO\AccessTypeModelValidationMessage.Designer.cs">
+      <DependentUpon>AccessTypeModelValidationMessage.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Resource\EmployeeModelValidationMessage\AccessTypeDTO\AccessTypeModelValidationMessage.en.Designer.cs">
+      <DependentUpon>AccessTypeModelValidationMessage.en.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Resource\EmployeeModelValidationMessage\BankAccountTypeDTO\BankAccountTypeModelValidationMessage.Designer.cs">
+      <DependentUpon>BankAccountTypeModelValidationMessage.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Resource\EmployeeModelValidationMessage\BankAccountTypeDTO\BankAccountTypeModelValidationMessage.en.Designer.cs">
+      <DependentUpon>BankAccountTypeModelValidationMessage.en.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Resource\EmployeeModelValidationMessage\BankInformationDTO\BankInformationModelValidationMessage.Designer.cs">
+      <DependentUpon>BankInformationModelValidationMessage.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Resource\EmployeeModelValidationMessage\BankInformationDTO\BankInformationModelValidationMessage.en.Designer.cs">
+      <DependentUpon>BankInformationModelValidationMessage.en.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Resource\EmployeeModelValidationMessage\BloodGroupDTO\BloodGroupModelValidationMessage.Designer.cs">
+      <DependentUpon>BloodGroupModelValidationMessage.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Resource\EmployeeModelValidationMessage\BloodGroupDTO\BloodGroupModelValidationMessage.en.Designer.cs">
+      <DependentUpon>BloodGroupModelValidationMessage.en.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Resource\EmployeeModelValidationMessage\ContractTypeDTO\ContractTypeModelValidationMessage.Designer.cs">
+      <DependentUpon>ContractTypeModelValidationMessage.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Resource\EmployeeModelValidationMessage\ContractTypeDTO\ContractTypeModelValidationMessage.en.Designer.cs">
+      <DependentUpon>ContractTypeModelValidationMessage.en.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Resource\EmployeeModelValidationMessage\DebitDTO\DebitModelValidationMessage.Designer.cs">
+      <DependentUpon>DebitModelValidationMessage.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Resource\EmployeeModelValidationMessage\DebitDTO\DebitModelValidationMessage.en.Designer.cs">
+      <DependentUpon>DebitModelValidationMessage.en.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Resource\EmployeeModelValidationMessage\DisabilitySituationDTO\DisabilitySituationModelValidationMessage.Designer.cs">
+      <DependentUpon>DisabilitySituationModelValidationMessage.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Resource\EmployeeModelValidationMessage\DisabilitySituationDTO\DisabilitySituationModelValidationMessage.en.Designer.cs">
+      <DependentUpon>DisabilitySituationModelValidationMessage.en.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Resource\EmployeeModelValidationMessage\EducationLevelDTO\EducationLevelModelValidationMessage.Designer.cs">
+      <DependentUpon>EducationLevelModelValidationMessage.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Resource\EmployeeModelValidationMessage\EducationLevelDTO\EducationLevelModelValidationMessage.en.Designer.cs">
+      <DependentUpon>EducationLevelModelValidationMessage.en.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Resource\EmployeeModelValidationMessage\EducationStatusDTO\EducationStatusModelValidationMessage.Designer.cs">
+      <DependentUpon>EducationStatusModelValidationMessage.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Resource\EmployeeModelValidationMessage\EducationStatusDTO\EducationStatusModelValidationMessage.en.Designer.cs">
+      <DependentUpon>EducationStatusModelValidationMessage.en.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Resource\EmployeeModelValidationMessage\EmployeeDetailDTO\EmployeeDetailModelValidationMessage.Designer.cs">
+      <DependentUpon>EmployeeDetailModelValidationMessage.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Resource\EmployeeModelValidationMessage\EmployeeDetailDTO\EmployeeDetailModelValidationMessage.en.Designer.cs">
+      <DependentUpon>EmployeeDetailModelValidationMessage.en.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Resource\EmployeeModelValidationMessage\EmployeeDTO\EmployeeModelValidationMessage.Designer.cs">
+      <DependentUpon>EmployeeModelValidationMessage.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Resource\EmployeeModelValidationMessage\EmployeeDTO\EmployeeModelValidationMessage.en.Designer.cs">
+      <DependentUpon>EmployeeModelValidationMessage.en.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Resource\EmployeeModelValidationMessage\EmployeeOtherInfoDTO\EmployeeOtherInfoModelValidationMessage.Designer.cs">
+      <DependentUpon>EmployeeOtherInfoModelValidationMessage.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Resource\EmployeeModelValidationMessage\EmployeeOtherInfoDTO\EmployeeOtherInfoModelValidationMessage.en.Designer.cs">
+      <DependentUpon>EmployeeOtherInfoModelValidationMessage.en.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Resource\EmployeeModelValidationMessage\EmployeeSalaryDTO\EmployeeSalaryModelValidationMessage.Designer.cs">
+      <DependentUpon>EmployeeSalaryModelValidationMessage.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Resource\EmployeeModelValidationMessage\EmployeeSalaryDTO\EmployeeSalaryModelValidationMessage.en.Designer.cs">
+      <DependentUpon>EmployeeSalaryModelValidationMessage.en.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Resource\EmployeeModelValidationMessage\EmploymentTypeDTO\EmploymentTypeModelValidationMessage.Designer.cs">
+      <DependentUpon>EmploymentTypeModelValidationMessage.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Resource\EmployeeModelValidationMessage\EmploymentTypeDTO\EmploymentTypeModelValidationMessage.en.Designer.cs">
+      <DependentUpon>EmploymentTypeModelValidationMessage.en.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Resource\EmployeeModelValidationMessage\GenderDTO\GenderModelValidationMessage.Designer.cs">
+      <DependentUpon>GenderModelValidationMessage.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Resource\EmployeeModelValidationMessage\GenderDTO\GenderModelValidationMessage.en.Designer.cs">
+      <DependentUpon>GenderModelValidationMessage.en.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Resource\EmployeeModelValidationMessage\MaritalStatusDTO\MaritalStatusModelValidationMessage.Designer.cs">
+      <DependentUpon>MaritalStatusModelValidationMessage.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Resource\EmployeeModelValidationMessage\MaritalStatusDTO\MaritalStatusModelValidationMessage.en.Designer.cs">
+      <DependentUpon>MaritalStatusModelValidationMessage.en.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Resource\EmployeeModelValidationMessage\PermitTypeDTO\PermitTypeModelValidationMessage.Designer.cs">
+      <DependentUpon>PermitTypeModelValidationMessage.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Resource\EmployeeModelValidationMessage\PermitTypeDTO\PermitTypeModelValidationMessage.en.Designer.cs">
+      <DependentUpon>PermitTypeModelValidationMessage.en.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Resource\ModelValidationMessage.en.Designer.cs">
+      <DependentUpon>ModelValidationMessage.en.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Resource\ModelValidationMessage.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ModelValidationMessage.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Resource\ProjectBaseModelValidationMessage\CityDTO\CityModelValidationMessage.Designer.cs">
+      <DependentUpon>CityModelValidationMessage.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Resource\ProjectBaseModelValidationMessage\CityDTO\CityModelValidationMessage.en.Designer.cs">
+      <DependentUpon>CityModelValidationMessage.en.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Resource\ProjectBaseModelValidationMessage\CountryDTO\CountryModelValidationMessage.Designer.cs">
+      <DependentUpon>CountryModelValidationMessage.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Resource\ProjectBaseModelValidationMessage\CountryDTO\CountryModelValidationMessage.en.Designer.cs">
+      <DependentUpon>CountryModelValidationMessage.en.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Resource\ProjectBaseModelValidationMessage\DistrictDTO\DistrictModelValidationMessage.Designer.cs">
+      <DependentUpon>DistrictModelValidationMessage.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Resource\ProjectBaseModelValidationMessage\DistrictDTO\DistrictModelValidationMessage.en.Designer.cs">
+      <DependentUpon>DistrictModelValidationMessage.en.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Resource\ProjectBaseModelValidationMessage\PageDTO\PageModelValidationMessage.Designer.cs">
+      <DependentUpon>PageModelValidationMessage.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Resource\ProjectBaseModelValidationMessage\PageDTO\PageModelValidationMessage.en.Designer.cs">
+      <DependentUpon>PageModelValidationMessage.en.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Resource\ProjectBaseModelValidationMessage\PageEventDTO\PageEventModelValidationMessage.Designer.cs">
+      <DependentUpon>PageEventModelValidationMessage.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Resource\ProjectBaseModelValidationMessage\PageEventDTO\PageEventModelValidationMessage.en.Designer.cs">
+      <DependentUpon>PageEventModelValidationMessage.en.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Resource\ProjectBaseModelValidationMessage\RoleEventDTO\RoleEventModelValidationMessage.Designer.cs">
+      <DependentUpon>RoleEventModelValidationMessage.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Resource\ProjectBaseModelValidationMessage\RoleEventDTO\RoleEventModelValidationMessage.en.Designer.cs">
+      <DependentUpon>RoleEventModelValidationMessage.en.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Resource\ProjectBaseModelValidationMessage\UserDTO\UserModelValidationMessage.Designer.cs">
+      <DependentUpon>UserModelValidationMessage.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Resource\ProjectBaseModelValidationMessage\UserDTO\UserModelValidationMessage.en.Designer.cs">
+      <DependentUpon>UserModelValidationMessage.en.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <EmbeddedResource Include="Resource\CompanyModelValidationMessage\CompanyBranchDTO\CompanyBranchDTOModelValidationMessage.en.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>CompanyBranchDTOModelValidationMessage.en.Designer.cs</LastGenOutput>
+      <CustomToolNamespace>sysLanguage</CustomToolNamespace>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resource\CompanyModelValidationMessage\CompanyBranchDTO\CompanyBranchDTOModelValidationMessage.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>CompanyBranchDTOModelValidationMessage.Designer.cs</LastGenOutput>
+      <CustomToolNamespace>sysLanguage</CustomToolNamespace>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resource\CompanyModelValidationMessage\CompanyDepartmentDTO\CompanyDepartmentDTOModelValidationMessage.en.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>CompanyDepartmentDTOModelValidationMessage.en.Designer.cs</LastGenOutput>
+      <CustomToolNamespace>sysLanguage</CustomToolNamespace>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resource\CompanyModelValidationMessage\CompanyDepartmentDTO\CompanyDepartmentDTOModelValidationMessage.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>CompanyDepartmentDTOModelValidationMessage.Designer.cs</LastGenOutput>
+      <CustomToolNamespace>sysLanguage</CustomToolNamespace>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resource\CompanyModelValidationMessage\CompanyDTO\CompanyDTOModelValidationMessage.en.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>CompanyDTOModelValidationMessage.en.Designer.cs</LastGenOutput>
+      <CustomToolNamespace>sysLanguage</CustomToolNamespace>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resource\CompanyModelValidationMessage\CompanyDTO\CompanyDTOModelValidationMessage.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>CompanyDTOModelValidationMessage.Designer.cs</LastGenOutput>
+      <CustomToolNamespace>sysLanguage</CustomToolNamespace>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resource\CompanyModelValidationMessage\CompanyTitleDTO\CompanyTitleDTOModelValidationMessage.en.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>CompanyTitleDTOModelValidationMessage.en.Designer.cs</LastGenOutput>
+      <CustomToolNamespace>sysLanguage</CustomToolNamespace>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resource\CompanyModelValidationMessage\CompanyTitleDTO\CompanyTitleDTOModelValidationMessage.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>CompanyTitleDTOModelValidationMessage.Designer.cs</LastGenOutput>
+      <CustomToolNamespace>sysLanguage</CustomToolNamespace>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resource\EmployeeModelValidationMessage\AccessTypeDTO\AccessTypeModelValidationMessage.en.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>AccessTypeModelValidationMessage.en.Designer.cs</LastGenOutput>
+      <CustomToolNamespace>sysLanguage</CustomToolNamespace>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resource\EmployeeModelValidationMessage\AccessTypeDTO\AccessTypeModelValidationMessage.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>AccessTypeModelValidationMessage.Designer.cs</LastGenOutput>
+      <CustomToolNamespace>sysLanguage</CustomToolNamespace>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resource\EmployeeModelValidationMessage\BankAccountTypeDTO\BankAccountTypeModelValidationMessage.en.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>BankAccountTypeModelValidationMessage.en.Designer.cs</LastGenOutput>
+      <CustomToolNamespace>sysLanguage</CustomToolNamespace>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resource\EmployeeModelValidationMessage\BankAccountTypeDTO\BankAccountTypeModelValidationMessage.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>BankAccountTypeModelValidationMessage.Designer.cs</LastGenOutput>
+      <CustomToolNamespace>sysLanguage</CustomToolNamespace>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resource\EmployeeModelValidationMessage\BankInformationDTO\BankInformationModelValidationMessage.en.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>BankInformationModelValidationMessage.en.Designer.cs</LastGenOutput>
+      <CustomToolNamespace>sysLanguage</CustomToolNamespace>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resource\EmployeeModelValidationMessage\BankInformationDTO\BankInformationModelValidationMessage.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>BankInformationModelValidationMessage.Designer.cs</LastGenOutput>
+      <CustomToolNamespace>sysLanguage</CustomToolNamespace>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resource\EmployeeModelValidationMessage\BloodGroupDTO\BloodGroupModelValidationMessage.en.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>BloodGroupModelValidationMessage.en.Designer.cs</LastGenOutput>
+      <CustomToolNamespace>sysLanguage</CustomToolNamespace>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resource\EmployeeModelValidationMessage\BloodGroupDTO\BloodGroupModelValidationMessage.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>BloodGroupModelValidationMessage.Designer.cs</LastGenOutput>
+      <CustomToolNamespace>sysLanguage</CustomToolNamespace>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resource\EmployeeModelValidationMessage\ContractTypeDTO\ContractTypeModelValidationMessage.en.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>ContractTypeModelValidationMessage.en.Designer.cs</LastGenOutput>
+      <CustomToolNamespace>sysLanguage</CustomToolNamespace>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resource\EmployeeModelValidationMessage\ContractTypeDTO\ContractTypeModelValidationMessage.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>ContractTypeModelValidationMessage.Designer.cs</LastGenOutput>
+      <CustomToolNamespace>sysLanguage</CustomToolNamespace>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resource\EmployeeModelValidationMessage\DebitDTO\DebitModelValidationMessage.en.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>DebitModelValidationMessage.en.Designer.cs</LastGenOutput>
+      <CustomToolNamespace>sysLanguage</CustomToolNamespace>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resource\EmployeeModelValidationMessage\DebitDTO\DebitModelValidationMessage.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>DebitModelValidationMessage.Designer.cs</LastGenOutput>
+      <CustomToolNamespace>sysLanguage</CustomToolNamespace>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resource\EmployeeModelValidationMessage\DisabilitySituationDTO\DisabilitySituationModelValidationMessage.en.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>DisabilitySituationModelValidationMessage.en.Designer.cs</LastGenOutput>
+      <CustomToolNamespace>sysLanguage</CustomToolNamespace>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resource\EmployeeModelValidationMessage\DisabilitySituationDTO\DisabilitySituationModelValidationMessage.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>DisabilitySituationModelValidationMessage.Designer.cs</LastGenOutput>
+      <CustomToolNamespace>sysLanguage</CustomToolNamespace>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resource\EmployeeModelValidationMessage\EducationLevelDTO\EducationLevelModelValidationMessage.en.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>EducationLevelModelValidationMessage.en.Designer.cs</LastGenOutput>
+      <CustomToolNamespace>sysLanguage</CustomToolNamespace>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resource\EmployeeModelValidationMessage\EducationLevelDTO\EducationLevelModelValidationMessage.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>EducationLevelModelValidationMessage.Designer.cs</LastGenOutput>
+      <CustomToolNamespace>sysLanguage</CustomToolNamespace>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resource\EmployeeModelValidationMessage\EducationStatusDTO\EducationStatusModelValidationMessage.en.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>EducationStatusModelValidationMessage.en.Designer.cs</LastGenOutput>
+      <CustomToolNamespace>sysLanguage</CustomToolNamespace>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resource\EmployeeModelValidationMessage\EducationStatusDTO\EducationStatusModelValidationMessage.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>EducationStatusModelValidationMessage.Designer.cs</LastGenOutput>
+      <CustomToolNamespace>sysLanguage</CustomToolNamespace>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resource\EmployeeModelValidationMessage\EmployeeDetailDTO\EmployeeDetailModelValidationMessage.en.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>EmployeeDetailModelValidationMessage.en.Designer.cs</LastGenOutput>
+      <CustomToolNamespace>sysLanguage</CustomToolNamespace>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resource\EmployeeModelValidationMessage\EmployeeDetailDTO\EmployeeDetailModelValidationMessage.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>EmployeeDetailModelValidationMessage.Designer.cs</LastGenOutput>
+      <CustomToolNamespace>sysLanguage</CustomToolNamespace>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resource\EmployeeModelValidationMessage\EmployeeDTO\EmployeeModelValidationMessage.en.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>EmployeeModelValidationMessage.en.Designer.cs</LastGenOutput>
+      <CustomToolNamespace>sysLanguage</CustomToolNamespace>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resource\EmployeeModelValidationMessage\EmployeeDTO\EmployeeModelValidationMessage.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>EmployeeModelValidationMessage.Designer.cs</LastGenOutput>
+      <CustomToolNamespace>sysLanguage</CustomToolNamespace>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resource\EmployeeModelValidationMessage\EmployeeOtherInfoDTO\EmployeeOtherInfoModelValidationMessage.en.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>EmployeeOtherInfoModelValidationMessage.en.Designer.cs</LastGenOutput>
+      <CustomToolNamespace>sysLanguage</CustomToolNamespace>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resource\EmployeeModelValidationMessage\EmployeeOtherInfoDTO\EmployeeOtherInfoModelValidationMessage.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>EmployeeOtherInfoModelValidationMessage.Designer.cs</LastGenOutput>
+      <CustomToolNamespace>sysLanguage</CustomToolNamespace>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resource\EmployeeModelValidationMessage\EmployeeSalaryDTO\EmployeeSalaryModelValidationMessage.en.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>EmployeeSalaryModelValidationMessage.en.Designer.cs</LastGenOutput>
+      <CustomToolNamespace>sysLanguage</CustomToolNamespace>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resource\EmployeeModelValidationMessage\EmployeeSalaryDTO\EmployeeSalaryModelValidationMessage.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>EmployeeSalaryModelValidationMessage.Designer.cs</LastGenOutput>
+      <CustomToolNamespace>sysLanguage</CustomToolNamespace>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resource\EmployeeModelValidationMessage\EmploymentTypeDTO\EmploymentTypeModelValidationMessage.en.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>EmploymentTypeModelValidationMessage.en.Designer.cs</LastGenOutput>
+      <CustomToolNamespace>sysLanguage</CustomToolNamespace>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resource\EmployeeModelValidationMessage\EmploymentTypeDTO\EmploymentTypeModelValidationMessage.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>EmploymentTypeModelValidationMessage.Designer.cs</LastGenOutput>
+      <CustomToolNamespace>sysLanguage</CustomToolNamespace>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resource\EmployeeModelValidationMessage\GenderDTO\GenderModelValidationMessage.en.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>GenderModelValidationMessage.en.Designer.cs</LastGenOutput>
+      <CustomToolNamespace>sysLanguage</CustomToolNamespace>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resource\EmployeeModelValidationMessage\GenderDTO\GenderModelValidationMessage.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>GenderModelValidationMessage.Designer.cs</LastGenOutput>
+      <CustomToolNamespace>sysLanguage</CustomToolNamespace>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resource\EmployeeModelValidationMessage\MaritalStatusDTO\MaritalStatusModelValidationMessage.en.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>MaritalStatusModelValidationMessage.en.Designer.cs</LastGenOutput>
+      <CustomToolNamespace>sysLanguage</CustomToolNamespace>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resource\EmployeeModelValidationMessage\MaritalStatusDTO\MaritalStatusModelValidationMessage.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>MaritalStatusModelValidationMessage.Designer.cs</LastGenOutput>
+      <CustomToolNamespace>sysLanguage</CustomToolNamespace>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resource\EmployeeModelValidationMessage\PermitTypeDTO\PermitTypeModelValidationMessage.en.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>PermitTypeModelValidationMessage.en.Designer.cs</LastGenOutput>
+      <CustomToolNamespace>sysLanguage</CustomToolNamespace>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resource\EmployeeModelValidationMessage\PermitTypeDTO\PermitTypeModelValidationMessage.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>PermitTypeModelValidationMessage.Designer.cs</LastGenOutput>
+      <CustomToolNamespace>sysLanguage</CustomToolNamespace>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resource\ModelValidationMessage.en.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>ModelValidationMessage.en.Designer.cs</LastGenOutput>
+      <CustomToolNamespace>sysLanguage</CustomToolNamespace>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resource\ModelValidationMessage.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>ModelValidationMessage.Designer.cs</LastGenOutput>
+      <CustomToolNamespace>sysLanguage</CustomToolNamespace>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resource\ProjectBaseModelValidationMessage\CityDTO\CityModelValidationMessage.en.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>CityModelValidationMessage.en.Designer.cs</LastGenOutput>
+      <CustomToolNamespace>sysLanguage</CustomToolNamespace>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resource\ProjectBaseModelValidationMessage\CityDTO\CityModelValidationMessage.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>CityModelValidationMessage.Designer.cs</LastGenOutput>
+      <CustomToolNamespace>sysLanguage</CustomToolNamespace>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resource\ProjectBaseModelValidationMessage\CountryDTO\CountryModelValidationMessage.en.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>CountryModelValidationMessage.en.Designer.cs</LastGenOutput>
+      <CustomToolNamespace>sysLanguage</CustomToolNamespace>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resource\ProjectBaseModelValidationMessage\CountryDTO\CountryModelValidationMessage.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>CountryModelValidationMessage.Designer.cs</LastGenOutput>
+      <CustomToolNamespace>sysLanguage</CustomToolNamespace>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resource\ProjectBaseModelValidationMessage\DistrictDTO\DistrictModelValidationMessage.en.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>DistrictModelValidationMessage.en.Designer.cs</LastGenOutput>
+      <CustomToolNamespace>sysLanguage</CustomToolNamespace>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resource\ProjectBaseModelValidationMessage\DistrictDTO\DistrictModelValidationMessage.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>DistrictModelValidationMessage.Designer.cs</LastGenOutput>
+      <CustomToolNamespace>sysLanguage</CustomToolNamespace>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resource\ProjectBaseModelValidationMessage\PageDTO\PageModelValidationMessage.en.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>PageModelValidationMessage.en.Designer.cs</LastGenOutput>
+      <CustomToolNamespace>sysLanguage</CustomToolNamespace>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resource\ProjectBaseModelValidationMessage\PageDTO\PageModelValidationMessage.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>PageModelValidationMessage.Designer.cs</LastGenOutput>
+      <CustomToolNamespace>sysLanguage</CustomToolNamespace>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resource\ProjectBaseModelValidationMessage\PageEventDTO\PageEventModelValidationMessage.en.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>PageEventModelValidationMessage.en.Designer.cs</LastGenOutput>
+      <CustomToolNamespace>sysLanguage</CustomToolNamespace>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resource\ProjectBaseModelValidationMessage\PageEventDTO\PageEventModelValidationMessage.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>PageEventModelValidationMessage.Designer.cs</LastGenOutput>
+      <CustomToolNamespace>sysLanguage</CustomToolNamespace>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resource\ProjectBaseModelValidationMessage\RoleEventDTO\RoleEventModelValidationMessage.en.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>RoleEventModelValidationMessage.en.Designer.cs</LastGenOutput>
+      <CustomToolNamespace>sysLanguage</CustomToolNamespace>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resource\ProjectBaseModelValidationMessage\RoleEventDTO\RoleEventModelValidationMessage.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>RoleEventModelValidationMessage.Designer.cs</LastGenOutput>
+      <CustomToolNamespace>sysLanguage</CustomToolNamespace>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resource\ProjectBaseModelValidationMessage\UserDTO\UserModelValidationMessage.en.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>UserModelValidationMessage.en.Designer.cs</LastGenOutput>
+      <CustomToolNamespace>sysLanguage</CustomToolNamespace>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resource\ProjectBaseModelValidationMessage\UserDTO\UserModelValidationMessage.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>UserModelValidationMessage.Designer.cs</LastGenOutput>
+      <CustomToolNamespace>sysLanguage</CustomToolNamespace>
+    </EmbeddedResource>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

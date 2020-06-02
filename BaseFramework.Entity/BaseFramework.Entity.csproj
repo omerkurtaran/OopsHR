@@ -1,0 +1,90 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{CE2D4E36-A72B-4418-8ECC-377DDC49B391}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>BaseFramework.Entity</RootNamespace>
+    <AssemblyName>BaseFramework.Entity</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Company.cs" />
+    <Compile Include="CompanyBranch.cs" />
+    <Compile Include="CompanyDepartment.cs" />
+    <Compile Include="CompanyTitle.cs" />
+    <Compile Include="EmployeeEntity\AccessType.cs" />
+    <Compile Include="EmployeeEntity\Advance.cs" />
+    <Compile Include="EmployeeEntity\BankAccountType.cs" />
+    <Compile Include="EmployeeEntity\BankInformation.cs" />
+    <Compile Include="EmployeeEntity\BloodGroup.cs" />
+    <Compile Include="EmployeeEntity\ContractType.cs" />
+    <Compile Include="EmployeeEntity\Debit.cs" />
+    <Compile Include="EmployeeEntity\DebitCategory.cs" />
+    <Compile Include="EmployeeEntity\Demand.cs" />
+    <Compile Include="EmployeeEntity\DisabilitySituation.cs" />
+    <Compile Include="EmployeeEntity\EducationLevel.cs" />
+    <Compile Include="EmployeeEntity\Education.cs" />
+    <Compile Include="EmployeeEntity\EducationStatus.cs" />
+    <Compile Include="EmployeeEntity\EducationsType.cs" />
+    <Compile Include="EmployeeEntity\Employee.cs" />
+    <Compile Include="EmployeeEntity\EmployeeDetail.cs" />
+    <Compile Include="EmployeeEntity\EmployeeOtherInfo.cs" />
+    <Compile Include="EmployeeEntity\EmployeeSalary.cs" />
+    <Compile Include="EmployeeEntity\EmploymentType.cs" />
+    <Compile Include="EmployeeEntity\Expense.cs" />
+    <Compile Include="EmployeeEntity\Gender.cs" />
+    <Compile Include="EmployeeEntity\MaritalStatus.cs" />
+    <Compile Include="EmployeeEntity\Overtime.cs" />
+    <Compile Include="EmployeeEntity\Permit.cs" />
+    <Compile Include="EmployeeEntity\PermitType.cs" />
+    <Compile Include="EmployeeEntity\RequestForVisa.cs" />
+    <Compile Include="EmployeeEntity\SystemEducation.cs" />
+    <Compile Include="EmployeeEntity\VisaType.cs" />
+    <Compile Include="ProjectBaseEntity\City.cs" />
+    <Compile Include="ProjectBaseEntity\Country.cs" />
+    <Compile Include="ProjectBaseEntity\District.cs" />
+    <Compile Include="ProjectBaseEntity\Log.cs" />
+    <Compile Include="ProjectBaseEntity\Page.cs" />
+    <Compile Include="ProjectBaseEntity\PageEvent.cs" />
+    <Compile Include="ProjectBaseEntity\Role.cs" />
+    <Compile Include="ProjectBaseEntity\User.cs" />
+    <Compile Include="ProjectBaseEntity\UserCompany.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

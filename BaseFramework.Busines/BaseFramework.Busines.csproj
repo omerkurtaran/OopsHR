@@ -1,0 +1,159 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{B5DD337F-C9CD-4624-9300-7C61A98F1604}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>BaseFramework.Busines</RootNamespace>
+    <AssemblyName>BaseFramework.Busines</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AutoMapper, Version=9.0.0.0, Culture=neutral, PublicKeyToken=be96cd2c38ef1005, processorArchitecture=MSIL">
+      <HintPath>..\packages\AutoMapper.9.0.0\lib\net461\AutoMapper.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Bcl.AsyncInterfaces, Version=1.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Bcl.AsyncInterfaces.1.1.0\lib\net461\Microsoft.Bcl.AsyncInterfaces.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.Composition" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.CompilerServices.Unsafe, Version=4.0.6.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Runtime.CompilerServices.Unsafe.4.7.1\lib\net461\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Threading.Tasks.Extensions, Version=4.2.0.1, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Threading.Tasks.Extensions.4.5.4\lib\net461\System.Threading.Tasks.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="EmployeeBusinesInterface\IAccessTypeService.cs" />
+    <Compile Include="EmployeeBusinesInterface\IAdvanceService.cs" />
+    <Compile Include="EmployeeBusinesInterface\IBankAccountTypeService.cs" />
+    <Compile Include="EmployeeBusinesInterface\IBankInformationService.cs" />
+    <Compile Include="EmployeeBusinesInterface\IBloodGroupService.cs" />
+    <Compile Include="EmployeeBusinesInterface\IContractTypeService.cs" />
+    <Compile Include="EmployeeBusinesInterface\IDebitCategoryService.cs" />
+    <Compile Include="EmployeeBusinesInterface\IDebitService.cs" />
+    <Compile Include="EmployeeBusinesInterface\IDemandService.cs" />
+    <Compile Include="EmployeeBusinesInterface\IDisabilitySituationService.cs" />
+    <Compile Include="EmployeeBusinesInterface\IEducationLevelService.cs" />
+    <Compile Include="EmployeeBusinesInterface\IEducationService.cs" />
+    <Compile Include="EmployeeBusinesInterface\IEducationStatusService.cs" />
+    <Compile Include="EmployeeBusinesInterface\IEducationsTypeService.cs" />
+    <Compile Include="EmployeeBusinesInterface\IEmployeeDetailService.cs" />
+    <Compile Include="EmployeeBusinesInterface\IEmployeeOtherInfoService.cs" />
+    <Compile Include="EmployeeBusinesInterface\IEmployeeSalaryService.cs" />
+    <Compile Include="EmployeeBusinesInterface\IEmployeeService.cs" />
+    <Compile Include="EmployeeBusinesInterface\IEmploymentTypeService.cs" />
+    <Compile Include="EmployeeBusinesInterface\IExpenseService.cs" />
+    <Compile Include="EmployeeBusinesInterface\IGenderService.cs" />
+    <Compile Include="EmployeeBusinesInterface\IMaritalStatusService.cs" />
+    <Compile Include="EmployeeBusinesInterface\IOvertimeService.cs" />
+    <Compile Include="EmployeeBusinesInterface\IPermitService.cs" />
+    <Compile Include="EmployeeBusinesInterface\IPermitTypeService.cs" />
+    <Compile Include="EmployeeBusinesInterface\IRequestForVisaService.cs" />
+    <Compile Include="EmployeeBusinesInterface\ISystemEducationService.cs" />
+    <Compile Include="EmployeeBusinesInterface\IVisaTypeService.cs" />
+    <Compile Include="EmployeeBusinesService\AccessTypeService.cs" />
+    <Compile Include="EmployeeBusinesService\AdvanceService.cs" />
+    <Compile Include="EmployeeBusinesService\BankAccountTypeService.cs" />
+    <Compile Include="EmployeeBusinesService\BankInformationService.cs" />
+    <Compile Include="EmployeeBusinesService\BloodGroupService.cs" />
+    <Compile Include="EmployeeBusinesService\ContractTypeService.cs" />
+    <Compile Include="EmployeeBusinesService\DebitCategoryService.cs" />
+    <Compile Include="EmployeeBusinesService\DebitService.cs" />
+    <Compile Include="EmployeeBusinesService\DemandService.cs" />
+    <Compile Include="EmployeeBusinesService\DisabilitySituationService.cs" />
+    <Compile Include="EmployeeBusinesService\EducationLevelService.cs" />
+    <Compile Include="EmployeeBusinesService\EducationService.cs" />
+    <Compile Include="EmployeeBusinesService\EducationStatusService.cs" />
+    <Compile Include="EmployeeBusinesService\EducationsTypeService.cs" />
+    <Compile Include="EmployeeBusinesService\EmployeeDetailService.cs" />
+    <Compile Include="EmployeeBusinesService\EmployeeOtherInfoService.cs" />
+    <Compile Include="EmployeeBusinesService\EmployeeSalaryService.cs" />
+    <Compile Include="EmployeeBusinesService\EmployeeService.cs" />
+    <Compile Include="EmployeeBusinesService\EmploymentTypeService.cs" />
+    <Compile Include="EmployeeBusinesService\ExpenseService.cs" />
+    <Compile Include="EmployeeBusinesService\GenderService.cs" />
+    <Compile Include="EmployeeBusinesService\MaritalStatusService.cs" />
+    <Compile Include="EmployeeBusinesService\OvertimeService.cs" />
+    <Compile Include="EmployeeBusinesService\PermitService.cs" />
+    <Compile Include="EmployeeBusinesService\PermitTypeService.cs" />
+    <Compile Include="EmployeeBusinesService\RequestForVisaService.cs" />
+    <Compile Include="EmployeeBusinesService\SystemEducationService.cs" />
+    <Compile Include="EmployeeBusinesService\VisaTypeService.cs" />
+    <Compile Include="ProjectBaseBusinesInterface\ICityService.cs" />
+    <Compile Include="ProjectBaseBusinesInterface\ICompanyBranchService.cs" />
+    <Compile Include="ProjectBaseBusinesInterface\ICompanyDeparmantService.cs" />
+    <Compile Include="ProjectBaseBusinesInterface\ICompanyService.cs" />
+    <Compile Include="ProjectBaseBusinesInterface\ICompanyTitleService.cs" />
+    <Compile Include="ProjectBaseBusinesInterface\ICountryService.cs" />
+    <Compile Include="ProjectBaseBusinesInterface\IDistrictService.cs" />
+    <Compile Include="ProjectBaseBusinesInterface\ILogService.cs" />
+    <Compile Include="ProjectBaseBusinesInterface\IPageEventService.cs" />
+    <Compile Include="ProjectBaseBusinesInterface\IPageService.cs" />
+    <Compile Include="ProjectBaseBusinesInterface\IRoleService.cs" />
+    <Compile Include="ProjectBaseBusinesInterface\IUserService.cs" />
+    <Compile Include="ProjectBaseBusinesService\CityService.cs" />
+    <Compile Include="ProjectBaseBusinesService\CompanyBranchService.cs" />
+    <Compile Include="ProjectBaseBusinesService\CompanyDeparmentService.cs" />
+    <Compile Include="ProjectBaseBusinesService\CompanyService.cs" />
+    <Compile Include="ProjectBaseBusinesService\CompanyTitleService.cs" />
+    <Compile Include="ProjectBaseBusinesService\CountryService.cs" />
+    <Compile Include="ProjectBaseBusinesService\DistrictService.cs" />
+    <Compile Include="ProjectBaseBusinesService\LogService.cs" />
+    <Compile Include="ProjectBaseBusinesService\PageEventService.cs" />
+    <Compile Include="ProjectBaseBusinesService\PageService.cs" />
+    <Compile Include="ProjectBaseBusinesService\RoleService.cs" />
+    <Compile Include="ProjectBaseBusinesService\UserService.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BaseFramework.Core\BaseFramework.Core.csproj">
+      <Project>{74f31cb9-728c-4d3a-a56b-5f50140647e9}</Project>
+      <Name>BaseFramework.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\BaseFramework.Entity\BaseFramework.Entity.csproj">
+      <Project>{CE2D4E36-A72B-4418-8ECC-377DDC49B391}</Project>
+      <Name>BaseFramework.Entity</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\BaseFramework.Model\BaseFramework.Model.csproj">
+      <Project>{7aea0319-6574-4ad8-a9d9-cbb2677acfb6}</Project>
+      <Name>BaseFramework.Model</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
